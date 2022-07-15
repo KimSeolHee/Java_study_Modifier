@@ -3,6 +3,7 @@ package com.iu.main;
 import com.iu.terran.Marine;
 import com.iu.terran.Scv;
 import com.iu.unit.Unit;
+import com.iu.zerg.Hydra;
 
 public class Main {
 	
@@ -27,6 +28,11 @@ public class Main {
 //		marine = (Marine)unit;
 //		형변환과 같은 맥락으로 생각하면 된다. 큰타입이 작은타입으로 자동변환은 불가. 강제 형변환 시켜줌
 		System.out.println(marine.getWeapon());
+		
+		Hydra hydra = new Hydra();
+		
+		marine.attack();
+		hydra.attack();
 		
 	}
 

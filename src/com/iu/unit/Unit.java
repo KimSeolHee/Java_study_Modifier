@@ -38,6 +38,10 @@ public abstract class Unit {
 	//완성되지 않은 메서드
 	public abstract void move();
 	
+// attack();을 상속 받지 않는 애들도 있으므로 인터페이스를 따로 두고 
+//	해당 메서드를 사용할 클래스는 인터페이스를 사용하여 구현
+//	public abstract void attack();
+	
 	public void info() {
 		System.out.println("Super info");
 	}
