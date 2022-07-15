@@ -1,20 +1,19 @@
 package com.iu.main;
 
-import com.iu.terran.Marine;
+import com.iu.himart.Computer;
+import com.iu.himart.Phon;
+import com.iu.himart.Tv;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		Marine marine = new Marine();
 		
-		marine.setHp(10);
-		System.out.println(marine.getHp());
-		
-		marine.setWeapon("검");
-		System.out.println(marine.getWeapon());
-		
-		marine.info();
-		marine.move();
+		Computer com = new Computer();
+		Tv tv = new Tv();
+		Phon phon = new Phon();
+		com.info();
+		tv.info();
+		phon.info();
 		
 	}
 
