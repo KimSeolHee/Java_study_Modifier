@@ -12,7 +12,9 @@ public abstract class Unit {
 //		this.hp = hp;
 //	}
 	
-	public Unit() {}
+	public Unit() {
+		System.out.println("Super 생성자!");
+	}
 	
 	public String getName() {
 		return name;
