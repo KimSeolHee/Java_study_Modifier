@@ -7,6 +7,13 @@ public abstract class Unit {
 	private int hp;
 	private String color;
 	
+//	public Unit(int hp) {
+//		System.out.println("Super 생성자!");
+//		this.hp = hp;
+//	}
+	
+	public Unit() {}
+	
 	public String getName() {
 		return name;
 	}
@@ -28,5 +35,9 @@ public abstract class Unit {
 	
 	//완성되지 않은 메서드
 	public abstract void move();
+	
+	public void info() {
+		System.out.println("Super info");
+	}
 	
 }

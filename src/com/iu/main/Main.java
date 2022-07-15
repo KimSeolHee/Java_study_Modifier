@@ -13,6 +13,9 @@ public class Main {
 		marine.setWeapon("검");
 		System.out.println(marine.getWeapon());
 		
+		marine.info();
+		marine.move();
+		
 	}
 
 }
