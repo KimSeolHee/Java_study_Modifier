@@ -4,6 +4,8 @@ public class Iu {
 
 	private String name;
 	private int age;
+	//fix-study라는 브랜치에 추가
+	private String test;
 	
 	private static Iu iu = null;
 	
