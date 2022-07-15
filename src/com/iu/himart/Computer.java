@@ -5,7 +5,7 @@ public class Computer extends Product {
 	public Computer() {
 		this.cpu="M2";
 		this.setBrand("MacMini");
-		this.setPoint(2000000);
+		this.setPoint(20);
 	}
 	private String cpu;
 
