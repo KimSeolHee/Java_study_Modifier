@@ -32,17 +32,15 @@ public class Main {
 		
 		CollectionStack stack = new CollectionStack();
 
-		int [] num = stack.add(numbers);
+		int [] numBox = stack.add(numbers);
 		for(int i= 0;i<numbers.length;i++) {
-			System.out.println(num[i]);
+			System.out.println(numBox[i]);
 		}
 		
-		int [] num2 =stack.remove(numbers);
+		int [] numBox2 =stack.remove(numbers);
 		for(int i= 0;i<numbers.length-1;i++) {
-			System.out.println(num2[i]);
+			System.out.println(numBox2[i]);
 		}
-
-
 		
 	}
 
