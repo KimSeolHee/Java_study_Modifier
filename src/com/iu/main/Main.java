@@ -11,7 +11,7 @@ public class Main {
 		// 1. com.iu.util CollectionStack클래스 생성
 		// 인터페이스 구현 메서드는 add remove가 구현 오버라이딩
 		// add메서드는 숫자 배열받고 새로운 숫자를 추가한다 아무거나 어디에 추가? 무조건 0번인덱스에
-		// stack.add(numbers) -> {4,1,2,3}
+		// stack.remove(numbers) -> {4,1,2,3}
 		// remove메서드가 호출되면 삭제한다.어디를? 0번인덱스를 삭제한다.
 		// stack.add(numbers) -> {2,3}
 		// 추가는 아무거나 입력받아서 숫자 추가
@@ -32,7 +32,15 @@ public class Main {
 		
 		CollectionStack stack = new CollectionStack();
 
-		stack.add(numbers);
+		int [] num = stack.add(numbers);
+		for(int i= 0;i<numbers.length;i++) {
+			System.out.println(num[i]);
+		}
+		
+		int [] num2 =stack.remove(numbers);
+		for(int i= 0;i<numbers.length-1;i++) {
+			System.out.println(num2[i]);
+		}
 
 
 		

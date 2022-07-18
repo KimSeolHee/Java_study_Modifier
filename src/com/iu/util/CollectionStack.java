@@ -30,20 +30,32 @@ public class CollectionStack implements Collection {
 				break;
 			}
 			
-			int j = 0;
-			copyNums[i] = numbers[j];
+			int index = 0;
+			copyNums[i] = numbers[index];
 			
-			j++;
+			index++;
 		}
 		numbers = copyNums;
 		
 		return numbers;
 	}
 
+	
+	// remove메서드가 호출되면 삭제한다.어디를? 0번인덱스를 삭제한다.
+	// stack.remove(numbers) -> {2,3}
+	
 	@Override
 	public int[] remove(int[] numbers) {
-		// TODO Auto-generated method stub
-		return null;
+		int [] minusNums = new int[numbers.length-1];
+		boolean flag = true;
+		for(int i = 0;i<numbers.length;i++) {
+			if(flag) {
+				minusNums[i] = numbers[i];  
+			}
+			numbers = minusNums;
+		}
+		
+		return numbers;
 	}
 
 }
